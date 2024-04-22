@@ -1,0 +1,677 @@
+#cart{
+    position: absolute;
+    margin-top: 140px;
+    width: 500px;
+    height: 200px;
+    z-index: 2;
+    background-color: #ff0000;
+  }
+  /*Estilo de los productos de las 4 paginas, les puse el mismo id para que quedaran casi con el mismo estilo*/
+  #producto1{
+    width: 240px;
+    margin-top: 0;
+    margin-left: 44%;
+    position: absolute;
+  }
+  #productList{
+    display: inline-block;
+    margin-top: px;
+    padding-left: 10px;
+    font-family: "Jost", sans-serif ;
+    margin-left: 69%;
+  }
+  #descripcion1{
+    font-family: "Jost", sans-serif ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 260px;
+    height: 250px;
+    margin-left: 18%;
+    margin-top: 14%;
+    text-align: justify;
+  }
+  #descripcion2{
+    font-family: "Jost", sans-serif ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 260px;
+    height: 250px;
+    margin-left: 18%;
+    margin-top: 530px;
+    text-align: justify;
+  }
+  #producto2{
+    width: 240px;
+    margin-top: 530px;
+    margin-left: 44%;
+    position: absolute;
+  }
+  #descripcion3{
+    font-family: "Jost", sans-serif ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 260px;
+    height: 250px;
+    margin-left: 18%;
+    margin-top: 855px;
+    text-align: justify;
+  }
+  #producto3{
+    width: 210px;
+    height: 280px;
+    margin-top: 845px;
+    margin-left: 46%;
+    position: absolute;
+  }
+  #descripcion4{
+    font-family: "Jost", sans-serif ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 260px;
+    height: 250px;
+    margin-left: 18%;
+    margin-top: 1183px;
+    text-align: justify;
+  }
+  #producto4{
+    width: 210px;
+    height: 280px;
+    margin-top: 1183px;
+    margin-left: 46%;
+    position: absolute;
+  }
+
+  /*Estilo para la barra lateral de menu*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family:"Jost", sans-serif  ;
+    margin-left: 25px;
+  }
+  .sidebar a:hover {
+    color: #a4a4a4;
+  }
+  .sidebar .close-btn {
+    position: absolute;
+   top: 12px;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+  }
+  .open-btn {
+    font-size: 23px;
+    cursor: pointer;
+    position: fixed;
+    top: 27.3px;
+    left: 28px;
+    z-index: 2;
+  }
+  .open-btn:hover{
+    color: #a4a4a4;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+  /*Estilo para la barra lateral del user*/
+  .pantalla {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+  .userbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0; 
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: "Jost", sans-serif  ;
+  } 
+  .userbar a {
+    text-decoration: none;
+    font-size: 22px;
+    color:#000000;
+    display: block;
+    transition: 0.3s;
+    margin-left: 35px;
+    margin-top: 300px;
+  }
+  .userbar a:hover {
+    color: #a4a4a4;
+  }
+  .userbar .cierre-user {
+    position: absolute;
+    margin-top: 20px;
+    left: 0px; 
+    font-size: 32px;
+    margin-left: 35px;
+  }
+  .abrir-user {
+    font-size: 17px;
+    cursor: pointer;
+    position: fixed;
+    top: 38px;
+    right: 105px; 
+    z-index: 1;
+  }
+  .abrir-user:hover {
+    color: #a4a4a4;
+  }
+  #perfil{
+    margin-left: 35px;
+    font-size: 22px;
+    margin-top: 80px;
+  }
+#usericono{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 225px;
+    font-size: 30px;
+}
+/*Estilo para la barra lateral de contacto*/
+.pantalla2 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    display: none;
+  }
+  .contactobar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0; 
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-left: 25px;
+    font-family: "Jost", sans-serif  ;
+  }
+  .contactobar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    margin-left: 25px;
+  }
+  .contactobar a:hover {
+    color:#a4a4a4;
+    z-index: 1;
+  }
+  .contactobar .close-contacto {
+    position: absolute;
+    top: 0;
+    left: 25px; 
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  .open-contacto {
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: 33.5px;
+    right: 165px; 
+    z-index: 1;
+    color: #000000; 
+    font-family: "Jost", sans-serif  ;
+  }
+  .open-contacto:hover {
+    color: #7e7e7e;
+    z-index: 1; 
+  }
+  .infocontacto{
+    font-family: "Jost", sans-serif ;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  #Fondo1{
+    background-image : url("img/fondo12.jpg") !important;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+#fondo2{
+    background-color: #dcdcdc;
+}
+.navbar{
+    position:fixed;
+    display:inline-block;
+    background-color:white;
+    width: 100%;
+    height: 90px;
+    margin-top: 0px;
+    z-index: 1;
+}
+#logo{
+    color: #000;
+    position: fixed;
+    margin-top: 24px;
+    margin-left: 48%;
+    font-family:  "Jost", sans-serif ;
+    z-index: 1;
+}
+#lista{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    float:right;
+    border-radius: 2px;
+    margin-top: 28px;
+    margin-right: 20px;
+}
+#carrito{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+#carrito:hover{
+    color: #a4a4a4;
+}
+.container {
+	position: fixed;
+	left: 160px;
+	top: 44px;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+  z-index: 1;
+}
+.buscador{
+	outline: none;
+	box-sizing: border-box;
+	height: 22px;
+	width: 0px;
+	padding: 0 10px;
+	color: #000000;
+	border-radius: 50px;
+	font-size: 16px;
+	border: 1px solid #000000;
+	transition: all .7s ease;
+    font-family: "Jost", sans-serif ;
+    z-index: 1;
+}
+input::placeholder {
+	color: rgb(0, 0, 0);
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+	background:#000000;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn i {
+	font-size: 18px;
+	color: rgb(0, 0, 0);
+	line-height: 35px;
+	transition: all .7s ease;
+}
+.container:hover input {
+	width: 180px;
+}
+.container:hover i{
+	transform: rotate(-360deg);
+}
+.btn:hover{
+	background:#000000;
+}
+.resultados {
+  list-style-type: none; /* Quita los puntos de lista */
+  padding: 0;
+}
+
+.resultados li {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los elementos */
+}
+
+.resultados li:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar sobre los elementos */
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family:"Jost", sans-serif  ;
+    margin-left: 25px;
+  }
+  .sidebar a:hover {
+    color: #a4a4a4;
+  }
+  .sidebar .close-btn {
+    position: absolute;
+   top: 12px;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+  }
+  .open-btn {
+    font-size: 23px;
+    cursor: pointer;
+    position: fixed;
+    top: 27.3px;
+    left: 28px;
+    z-index: 2;
+  }
+  .open-btn:hover{
+    color: #a4a4a4;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+  /*Estilo para la barra lateral del user*/
+  .pantalla {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+  .userbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0; 
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: "Jost", sans-serif  ;
+  } 
+  .userbar a {
+    text-decoration: none;
+    font-size: 22px;
+    color:#000000;
+    display: block;
+    transition: 0.3s;
+    margin-left: 35px;
+    margin-top: 300px;
+  }
+  .userbar a:hover {
+    color: #a4a4a4;
+  }
+  .userbar .cierre-user {
+    position: absolute;
+    margin-top: 20px;
+    left: 0px; 
+    font-size: 32px;
+    margin-left: 35px;
+  }
+  .abrir-user {
+    font-size: 17px;
+    cursor: pointer;
+    position: fixed;
+    top: 38px;
+    right: 105px; 
+    z-index: 1;
+  }
+  .abrir-user:hover {
+    color: #a4a4a4;
+  }
+  #perfil{
+    margin-left: 35px;
+    font-size: 22px;
+    margin-top: 80px;
+  }
+#usericono{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 225px;
+    font-size: 30px;
+}
+/*Estilo para la barra lateral de menu*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family:"Jost", sans-serif  ;
+    margin-left: 25px;
+  }
+  .sidebar a:hover {
+    color: #a4a4a4;
+  }
+  .sidebar .close-btn {
+    position: absolute;
+   top: 12px;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+  }
+  .open-btn {
+    font-size: 23px;
+    cursor: pointer;
+    position: fixed;
+    top: 27.3px;
+    left: 28px;
+    z-index: 2;
+  }
+  .open-btn:hover{
+    color: #a4a4a4;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+  /*Estilo para la barra lateral del user*/
+  .pantalla {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
+  }
+  .userbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0; 
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: "Jost", sans-serif  ;
+  } 
+  .userbar a {
+    text-decoration: none;
+    font-size: 22px;
+    color:#000000;
+    display: block;
+    transition: 0.3s;
+    margin-left: 35px;
+    margin-top: 300px;
+  }
+  .userbar a:hover {
+    color: #a4a4a4;
+  }
+  .userbar .cierre-user {
+    position: absolute;
+    margin-top: 20px;
+    left: 0px; 
+    font-size: 32px;
+    margin-left: 35px;
+  }
+  .abrir-user {
+    font-size: 17px;
+    cursor: pointer;
+    position: fixed;
+    top: 38px;
+    right: 105px; 
+    z-index: 1;
+  }
+  .abrir-user:hover {
+    color: #a4a4a4;
+  }
+  #perfil{
+    margin-left: 35px;
+    font-size: 22px;
+    margin-top: 80px;
+  }
+#usericono{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 225px;
+    font-size: 30px;
+}
+/*Estilo para la barra lateral de contacto*/
+.pantalla2 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    display: none;
+  }
+  .contactobar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0; 
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-left: 25px;
+    font-family: "Jost", sans-serif  ;
+  }
+  .contactobar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    margin-left: 25px;
+  }
+  .contactobar a:hover {
+    color:#a4a4a4;
+    z-index: 1;
+  }
+  .contactobar .close-contacto {
+    position: absolute;
+    top: 0;
+    left: 25px; 
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  .open-contacto {
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: 33.5px;
+    right: 165px; 
+    z-index: 1;
+    color: #000000; 
+    font-family: "Jost", sans-serif  ;
+  }
+  .open-contacto:hover {
+    color: #7e7e7e;
+    z-index: 1; 
+  }
+  .infocontacto{
+    font-family: "Jost", sans-serif ;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  #info{
+    font-family: "Jost", sans-serif ;
+  }

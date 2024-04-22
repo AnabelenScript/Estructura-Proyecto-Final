@@ -1,0 +1,48 @@
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 5px;
+    text-align: center;
+}}
+
+#Fondo1{
+    background-image : url("img/fondo12.jpg") !important;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+#loginForm{
+    background-color: transparent;
+    border: 1px solid azure;
+    border-radius: 20px;
+    backdrop-filter: blur(50px); 
+    width: 400px;
+    height: 310px;
+    margin-left: 40%;
+    margin-top:  270px;
+    text-align: center;
+    input::placeholder{
+        color: rgb(0, 0, 0);
+    }}
+
+    #loginUsername{
+        border-radius: 10px;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-color:azure;
+        color: azure;
+        font-family: monospace;
+    }
+    #loginPassword{
+        border-radius: 10px;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-color:azure;
+        color: azure;
+        font-family: monospace;
+    }

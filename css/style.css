@@ -1,0 +1,98 @@
+.navbar{
+    position:fixed;
+    display:inline-block;
+    background-color:white;
+    width: 100%;
+    height: 90px;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+#logo{
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+
+}
+
+/* Menu contacto */
+.contactobar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0; 
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-left: 25px;
+    font-family: "Jost", sans-serif  ;
+  }
+  .contactobar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    margin-left: 25px;
+  }
+  .contactobar a:hover {
+    color:#a4a4a4;
+    z-index: 1;
+  }
+  .contactobar .close-contacto {
+    position: absolute;
+    top: 0;
+    left: 25px; 
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  .open-contacto {
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: 33.5px;
+    right: 165px; 
+    z-index: 1;
+    color: #000000; 
+    font-family: "Jost", sans-serif  ;
+  }
+  .open-contacto:hover {
+    color: #7e7e7e;
+    z-index: 1; 
+  }
+  .infocontacto{
+    font-family: "Jost", sans-serif ;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+
+
+/* Menu Princial */
+
+  .menu-item {
+    padding: 11px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family:"Jost", sans-serif  ;
+    margin-left: 25px;
+  }
+  .menu-item :hover {
+    color: #a4a4a4;
+  }
+
+
+  /* Buscador */
+  .buscador{
+    margin-left: 50px;
+  }
+
+
+
+

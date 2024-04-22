@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIE</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body  id="Fondo1">
+    <div id="loginForm">
+        <br>
+       <br>
+        <h2 id="titulo1">INICIAR SESIÓN</h2>
+        <br>
+        <form id="login">
+            <i class='bx bxs-user' style="color: rgb(0, 0, 0); margin-left: 139px; position:absolute; margin-top: 6px;"></i>
+            <input type="text" id="loginUsername" placeholder="Nombre de Usuario" required>
+            <i class='bx bxs-key' style="color: rgb(0, 0, 0); margin-left: 139px; position: absolute; margin-top: 6px;" ></i>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <input type="submit" id="inicioSesion" value="Iniciar Sesión">
+        </form>
+        <p style="color: rgb(0, 0, 0); font-family: monospace;">
+            ¿No tiene una cuenta? <a href="#" onclick="toggleForm()" style="color: rgb(0, 0, 0); font-family: monospace;" >Registrarse</a></p>
+    </div>
+
+    <div id="registroForm" style="display: none;">
+        <br>
+        <br>
+        <h2 id="titulo2">REGISTRO</h2>
+        <br>
+        <form id="registrar">
+            <input type="text" id="registerUsername" placeholder="Nombre de Usuario" required>
+            <input type="password" id="registerPassword" placeholder="Contraseña" required>
+            <input type="submit" id="registrarse" value="Registrarse">
+        </form>
+        <p style="color: rgb(0, 0, 0); font-family: monospace;">
+            ¿Ya tiene una cuenta? <a href="#" onclick="toggleForm()" style="color: rgb(0, 0, 0); font-family: monospace;">Iniciar Sesión</a></p>
+    </div>
+    <script src="registro-login.js">
+    </script>
+</body>
+</html>
